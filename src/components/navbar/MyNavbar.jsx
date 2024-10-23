@@ -1,6 +1,6 @@
 function MyNavbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-success">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Ecotienda
@@ -19,18 +19,22 @@ function MyNavbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <a
+                className="nav-link active text-warning"
+                aria-current="page"
+                href="#"
+              >
                 Ubicación
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link text-warning" href="#">
                 Plantas y semillas
               </a>
             </li>
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle text-warning"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -72,7 +76,7 @@ function MyNavbar() {
               placeholder="Search"
               aria-label="Search"
             />
-            <button className="btn btn-outline-success" type="submit">
+            <button className="btn btn-light text-dark" type="submit">
               Search
             </button>
           </form>

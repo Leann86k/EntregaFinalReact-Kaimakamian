@@ -1,3 +1,5 @@
+import CartWidget from "../CartWidget/CartWidget";
+
 function MyNavbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-success">
@@ -32,6 +34,27 @@ function MyNavbar() {
                 Plantas y semillas
               </a>
             </li>
+
+            <li className="nav-item">
+              <a
+                className="nav-link active text-warning"
+                aria-current="page"
+                href="#"
+              >
+                Libros
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a
+                className="nav-link active text-warning"
+                aria-current="page"
+                href="#"
+              >
+                Macetas
+              </a>
+            </li>
+
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle text-warning"
@@ -45,12 +68,12 @@ function MyNavbar() {
               <ul className="dropdown-menu">
                 <li>
                   <a className="dropdown-item" href="#">
-                    Cesped
+                    kit de Cesped
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Rosas
+                    kit de Rosas
                   </a>
                 </li>
                 <li>
@@ -63,12 +86,10 @@ function MyNavbar() {
                 </li>
               </ul>
             </li>
-            <li className="nav-item">
-              <a className="nav-link disabled" aria-disabled="true">
-                Disabled
-              </a>
-            </li>
           </ul>
+
+          <CartWidget />
+
           <form className="d-flex" role="search">
             <input
               className="form-control me-2"

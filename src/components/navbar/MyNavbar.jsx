@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 
 function MyNavbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-success">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           Ecotienda
-        </a>
+        </Link>{" "}
         <button
           className="navbar-toggler"
           type="button"
@@ -21,68 +22,62 @@ function MyNavbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link active text-warning"
-                aria-current="page"
-                href="#"
+                to="/category/ubicacion"
               >
                 Ubicación
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-warning" href="#">
+              <Link className="nav-link text-warning" to="/category/plantas">
                 Plantas y semillas
-              </a>
+              </Link>
             </li>
-
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link active text-warning"
-                aria-current="page"
-                href="#"
+                to="/category/libros"
               >
                 Libros
-              </a>
+              </Link>
             </li>
-
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link active text-warning"
-                aria-current="page"
-                href="#"
+                to="/category/macetas"
               >
                 Macetas
-              </a>
+              </Link>
             </li>
-
             <li className="nav-item dropdown">
-              <a
+              <Link
                 className="nav-link dropdown-toggle text-warning"
-                href="#"
+                to="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Kits Iniciales
-              </a>
+              </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
-                    kit de Cesped
-                  </a>
+                  <Link className="dropdown-item" to="/category/kit-cesped">
+                    Kit de Cesped
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    kit de Rosas
-                  </a>
+                  <Link className="dropdown-item" to="/category/kit-rosas">
+                    Kit de Rosas
+                  </Link>
                 </li>
                 <li>
-                  <hr /> className="dropdown-divider"
+                  <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="#">
                     Something else here
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>

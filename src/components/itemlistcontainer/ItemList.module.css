@@ -1,0 +1,7 @@
+.cardOrder {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}

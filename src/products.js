@@ -14,7 +14,7 @@ const products = [
     description: "Una maceta decorativa ideal para cualquier planta.",
     imagen:
       "https://www.dimensi-on.com/wp-content/uploads/2019/03/plantas_interior_3.jpg",
-    category: "semilla",
+    category: "maceta",
   },
   {
     id: 3,
@@ -22,23 +22,23 @@ const products = [
     price: 2500,
     description: "Todo lo necesario para empezar a cultivar en casa.",
     imagen: "src/assets/portamaceta interior.webp",
-    category: "maceta",
+    category: "kit iniciales",
   },
 
   {
     id: 4,
-    title: "Planta de Interior",
+    title: "maceta de Interior",
     price: 1500,
-    description: "Una planta perfecta para interiores.",
+    description: "Una maceta ideal para interiores.",
     imagen: "src/assets/Cactus Opuntia.jpg",
     category: "maceta",
   },
 
   {
     id: 5,
-    title: "Planta de Interior",
+    title: "Tus plantas de interior",
     price: 1500,
-    description: "Una planta perfecta para interiores.",
+    description: "Un libro con lo básico para empezar.",
     imagen: "src/assets/Cactus Opuntia.jpg",
     category: "libro",
   },
@@ -54,11 +54,11 @@ const products = [
 
   {
     id: 7,
-    title: "Planta de Interior",
+    title: "Kit inicial",
     price: 1500,
     description: "Una planta perfecta para interiores.",
     imagen: "src/assets/Cactus Opuntia.jpg",
-    category: "kit inicales",
+    category: "kit iniciales",
   },
 
   {

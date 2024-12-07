@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import CartWidget from "../CartWidget/CartWidget";
+import CartWidget from "./CartWidget";
+import { Title } from "./Title";
 
 function MyNavbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-success">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          Ecotienda
-        </Link>{" "}
+        <Title />
+
         <button
           className="navbar-toggler"
           type="button"
@@ -22,22 +22,19 @@ function MyNavbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link
-                className="nav-link active text-warning"
-                to="/category/ubicacion"
-              >
-                Ubicación
+              <Link className="nav-link text-warning" to="/producto/planta">
+                Plantas
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-warning" to="/category/plantas">
-                Plantas y semillas
+              <Link className="nav-link text-warning" to="/producto/semilla">
+                Semillas
               </Link>
             </li>
             <li className="nav-item">
               <Link
                 className="nav-link active text-warning"
-                to="/category/libros"
+                to="/producto/libro"
               >
                 Libros
               </Link>
@@ -45,41 +42,10 @@ function MyNavbar() {
             <li className="nav-item">
               <Link
                 className="nav-link active text-warning"
-                to="/category/macetas"
+                to="/producto/maceta"
               >
                 Macetas
               </Link>
-            </li>
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle text-warning"
-                to="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Kits Iniciales
-              </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="/category/kit-cesped">
-                    Kit de Cesped
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/category/kit-rosas">
-                    Kit de Rosas
-                  </Link>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
             </li>
           </ul>
 

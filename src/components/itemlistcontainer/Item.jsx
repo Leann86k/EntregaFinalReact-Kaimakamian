@@ -1,6 +1,6 @@
 import React from "react";
-import { getProducts } from "../../products";
 import style from "./item.module.css";
+import { Link } from "react-router-dom";
 
 const Item = ({ item }) => {
   return (
@@ -11,9 +11,10 @@ const Item = ({ item }) => {
           <h2 className={style.cardTitle}>{item.title}</h2>
           <p className={style.cardText}>{item.description}</p>
           <p> ${item.price}</p>
-          <a href="#" className={style.cardButton}>
+          <Link to={`/item/${item.id}`}>Ver más</Link>
+          {/* <a href="" className={style.cardButton}>
             <span>Ver más</span>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
